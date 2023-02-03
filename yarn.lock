@@ -908,9 +908,9 @@
     regenerator-runtime "^0.13.11"
 
 "@babel/standalone@^7.19.0":
-  version "7.20.14"
-  resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.20.14.tgz#26b02632680ca58da9612630b1035d11e62437a1"
-  integrity sha512-zxdQD6+eMQumJFPOLpOZE34JAAGrZPMXCKvHR7Mtat/l+nHDOxlit5u85HDk5WkBXmvN5PhUMeimiC95KXD9+A==
+  version "7.20.15"
+  resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.20.15.tgz#ef82f1a9789d21d8b23f74d9fa8acecbe6ced02c"
+  integrity sha512-B3LmZ1NHlTb2eFEaw8rftZc730Wh9MlmsH8ubb6IjsNoIk9+SQ2aAA0nrm/1806+PftPRAACPClmKTu8PG7Tew==
 
 "@babel/template@^7.18.10", "@babel/template@^7.20.7":
   version "7.20.7"
@@ -2079,7 +2079,7 @@ atob@^2.1.2:
   resolved "https://registry.npmjs.org/atob/-/atob-2.1.2.tgz"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-autoprefixer@^10.2.5, autoprefixer@^10.4.8:
+autoprefixer@^10.2.5, autoprefixer@^10.4.13, autoprefixer@^10.4.8:
   version "10.4.13"
   resolved "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.13.tgz"
   integrity sha512-49vKpMqcZYsJjwotvt4+h/BCjJVnhGwcLpDt5xkcaOG3eLrG/HUYLagrihYsQ+qrIBgIzX1Rw7a6L8I/ZA1Atg==
@@ -7223,7 +7223,7 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.17, postcss@^7.0.2
     picocolors "^0.2.1"
     source-map "^0.6.1"
 
-postcss@^8.1.10, postcss@^8.2.15, postcss@^8.4.14, postcss@^8.4.16, postcss@^8.4.17, postcss@^8.4.18:
+postcss@^8.1.10, postcss@^8.2.15, postcss@^8.4.14, postcss@^8.4.16, postcss@^8.4.18, postcss@^8.4.21:
   version "8.4.21"
   resolved "https://registry.npmjs.org/postcss/-/postcss-8.4.21.tgz"
   integrity sha512-tP7u/Sn/dVxK2NnruI4H9BG+x+Wxz6oeZ1cJ8P6G/PZY0IKk4k/63TDsQf2kQq3+qoJeLm2kIBUNlZe3zgb4Zg==
@@ -8130,9 +8130,9 @@ std-env@^2.2.1, std-env@^2.3.0:
     ci-info "^3.1.1"
 
 std-env@^3.3.0:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/std-env/-/std-env-3.3.1.tgz#93a81835815e618c8aa75e7c8a4dc04f7c314e29"
-  integrity sha512-3H20QlwQsSm2OvAxWIYhs+j01MzzqwMwGiiO1NQaJYZgJZFPuAbf95/DiKRBSTYIJ2FeGUc+B/6mPGcWP9dO3Q==
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/std-env/-/std-env-3.3.2.tgz#af27343b001616015534292178327b202b9ee955"
+  integrity sha512-uUZI65yrV2Qva5gqE0+A7uVAvO40iPo6jGhs7s8keRfHCmtg+uB2X6EiLGCI9IgL1J17xGhvoOqSz79lzICPTA==
 
 stream-browserify@^2.0.1:
   version "2.0.2"
@@ -8307,7 +8307,7 @@ tailwind-config-viewer@^1.7.2:
     portfinder "^1.0.26"
     replace-in-file "^6.1.0"
 
-tailwindcss@^3.1.8:
+tailwindcss@^3.1.8, tailwindcss@^3.2.4:
   version "3.2.4"
   resolved "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.2.4.tgz"
   integrity sha512-AhwtHCKMtR71JgeYDaswmZXhPcW9iuI9Sp2LvZPo9upDZ7231ZJ7eA9RaURbhpXGVlrjX4cFNlB4ieTetEb7hQ==
