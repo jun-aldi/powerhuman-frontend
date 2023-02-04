@@ -38,6 +38,6 @@
 
 <script>
 export default {
-  layout: 'dashboard' // you can set a custom layout for the error page
+  layout: 'form' // you can set a custom layout for the error page
 }
 </script>
