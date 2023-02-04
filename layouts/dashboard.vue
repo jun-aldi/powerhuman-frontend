@@ -17,10 +17,10 @@
         </div>
         <div class="flex flex-col gap-4">
           <div class="text-sm text-grey">Daily Use</div>
-          <a href="index.html" class="nav-link active">
+          <NuxtLink to="/" class="nav-link active">
             <img src="/assets/svgs/ic-grid.svg" alt="">
             Overview
-          </a>
+          </NuxtLink>
           <a href="employees.html" class="nav-link">
             <img src="/assets/svgs/ic-users.svg" alt="">
             Employees
