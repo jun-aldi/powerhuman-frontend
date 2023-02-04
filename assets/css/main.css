@@ -51,7 +51,7 @@
   }
 
   .form-icon-search {
-    @apply sm: bg-[url('/assets/svgs/ic-search.svg')] bg-no-repeat bg-[center_right_24px]
+    @apply sm:bg-[url('/assets/svgs/ic-search.svg')] bg-no-repeat bg-[center_right_24px]
   }
 
   .form-icon-chevron_down {
@@ -59,7 +59,7 @@
   }
 
   .notification-dot {
-    @apply after: content-end after:bg-green-500 after:w-[6px] after:h-[6px] after:absolute after:z-30 after:rounded-full after:top-[12px] after:right-[15px]
+    @apply after:content-end after:bg-green-500 after:w-[6px] after:h-[6px] after:absolute after:z-30 after:rounded-full after:top-[12px] after:right-[15px]
   }
 
   .union-images img,
