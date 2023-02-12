@@ -59,15 +59,16 @@
           </div>
         </div>
       </section>
-      <a href="employee_add-to-team.html" class="w-full btn btn-primary mt-[14px]">
+      <NuxtLink :to="{ name: 'employees-team' }" class="w-full btn btn-primary mt-[14px]">
         Continue
-      </a>
+      </NuxtLink>
     </form>
   </section>
 </template>
 
 <script>
 export default {
-  layout: 'form'
+  layout: 'form',
+  middleware: 'auth',
 }
 </script>

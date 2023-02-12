@@ -27,15 +27,16 @@
           <option value="">Inactive</option>
         </select>
       </div>
-      <a href="my_teams.html" class="w-full btn btn-primary mt-[14px]">
+      <NuxtLink :to="{ name: 'teams' }" class="w-full btn btn-primary mt-[14px]">
         Continue
-      </a>
+      </NuxtLink>
     </form>
   </section>
 </template>
 
 <script>
 export default {
-  layout: 'form' // you can set a custom layout for the error page
+  layout: 'form',
+  middleware: 'auth', // you can set a custom layout for the error page
 }
 </script>

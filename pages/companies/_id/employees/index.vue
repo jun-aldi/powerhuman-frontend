@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- Main Content -->
+    <SideBar />
     <div class="lg:pr-[70px] py-[50px] lg:ml-[320px] xl:ml-[365px] px-4 lg:pl-0">
       <!-- Top Section -->
       <section class="flex flex-col flex-wrap justify-between gap-6 md:items-center md:flex-row">
@@ -19,7 +19,7 @@
         <div class="flex items-center gap-4">
           <form class="shrink md:w-[516px] w-full">
             <input type="text" name="" id="" class="input-field !outline-none !border-none italic form-icon-search ring-indigo-200
-                                focus:ring-2 transition-all duration-300 w-full"
+                                    focus:ring-2 transition-all duration-300 w-full"
               placeholder="Search people, team, project">
           </form>
           <a href="#" class="flex-none w-[46px] h-[46px] bg-white rounded-full p-[11px] relative notification-dot">
@@ -38,7 +38,7 @@
               </div>
               <p class="text-grey">Your team powers</p>
             </div>
-            <a href="employee_create.html" class="btn btn-primary">Add Employee</a>
+            <NuxtLink :to="{ name: 'employees-create' }" class="btn btn-primary">Add Employee</NuxtLink>
           </div>
         </div>
 
@@ -212,10 +212,12 @@
 
     </div>
   </div>
+
+
 </template>
 
 <script>
 export default {
-  layout: 'dashboard' // you can set a custom layout for the error page
+  middleware: 'auth',
 }
 </script>

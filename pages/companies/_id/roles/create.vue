@@ -23,15 +23,16 @@
           </li>
         </ul>
       </div>
-      <a href="roles.html" class="w-full btn btn-primary mt-[14px]">
+      <NuxtLink :to="{ name: 'roles' }" class="w-full btn btn-primary mt-[14px]">
         Save Role
-      </a>
+      </NuxtLink>
     </form>
   </section>
 </template>
 
 <script>
 export default {
-  layout: 'form'
+  layout: 'form',
+  middleware: 'auth',
 }
 </script>

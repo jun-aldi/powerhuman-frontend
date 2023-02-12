@@ -8,9 +8,9 @@
           <option value="" selected>Company Name</option>
         </select>
       </div>
-      <a href="/companies/1" class="w-full btn btn-primary mt-[14px]">
+      <button type="button" class="w-full btn btn-primary mt-[14px]">
         Continue
-      </a>
+      </button>
       <div class="text-center">or</div>
       <NuxtLink :to="{ name: 'companies-create' }" class="w-full border btn btn-white">
         Create New Company
@@ -18,7 +18,6 @@
     </div>
   </section>
 </template>
-
 <script>
 export default {
   middleware: 'auth',
