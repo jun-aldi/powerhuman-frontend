@@ -15,6 +15,7 @@
           </option>
         </select>
       </div>
+      <!-- ketika klik kita akan menjalankan opencompany -->
       <button @click="openCompany()" type="button" class="w-full btn btn-primary mt-[14px]">
         Continue
       </button>
@@ -39,6 +40,7 @@ export default {
     this.companies = await this.$axios.get('/company?limit=100')// get data
   },
   methods: {
+    //membuka compeny yang ada di tombol
     openCompany() {
       this.$router.push({
         name: 'companies-id',
