@@ -1,24 +1,22 @@
 <template>
   <section class="py-[70px] flex flex-col items-center justify-center px-4">
-    <div class="text-[32px] font-semibold text-dark">
-      Build New Team
-    </div>
+    <div class="text-[32px] font-semibold text-dark">Build New Team</div>
     <p class="mt-4 text-base leading-7 text-center mb-[50px] text-grey">
-      Team that can bring your company <br>
+      Team that can bring your company <br />
       growing bigger and bigger
     </p>
-    <form class="w-full card">
+    <form class="w-full card" @submit.prevent="createTeam">
       <div class="mb-[2px] mx-auto">
-        <img src="/assets/svgs/ric-box.svg" alt="">
+        <img src="/assets/svgs/ric-box.svg" alt="" />
       </div>
       <div class="form-group">
         <label for="" class="text-grey">Email Address</label>
-        <input type="email" class="input-field disabled:bg-grey disabled:outline-none" value="angga@yourcompany.com"
-          disabled>
+        <input type="email" class="input-field disabled:bg-grey disabled:outline-none" :value="this.$auth.user.email"
+          disabled />
       </div>
       <div class="form-group">
         <label for="" class="text-grey">Team Name</label>
-        <input type="text" class="input-field" value="Growth Marketing">
+        <input type="text" class="input-field" value="Growth Marketing" v-model="team.name" />
       </div>
       <div class="form-group">
         <label for="" class="text-grey">Status</label>
@@ -27,9 +25,9 @@
           <option value="">Inactive</option>
         </select>
       </div>
-      <NuxtLink :to="{ name: 'teams' }" class="w-full btn btn-primary mt-[14px]">
+      <button type="submit" class="w-full btn btn-primary mt-[14px]">
         Continue
-      </NuxtLink>
+      </button>
     </form>
   </section>
 </template>
@@ -37,6 +35,30 @@
 <script>
 export default {
   layout: 'form',
-  middleware: 'auth', // you can set a custom layout for the error page
+  middleware: 'auth',
+  data() {
+    return {
+      team: {
+        name: '',
+        company_id: this.$route.params.id,
+      },
+    }
+  },
+  methods: {
+    async createTeam() {
+      //proses register
+      try {
+        //send registration data to server
+        let response = await this.$axios.post('/team', this.team) //post('url_api', 'data')
+
+        //redirect to  My Teams Page
+        this.$router.push({ name: 'companies-id-teams' })
+
+        console.log(response)
+      } catch (error) {
+        console.Console.log(error)
+      }
+    },
+  }, // you can set a custom layout for the error page
 }
 </script>

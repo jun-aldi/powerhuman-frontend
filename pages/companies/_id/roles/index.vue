@@ -20,7 +20,7 @@
         <div class="flex items-center gap-4">
           <form class="shrink md:w-[516px] w-full">
             <input type="text" name="" id="" class="input-field !outline-none !border-none italic form-icon-search ring-indigo-200
-                                          focus:ring-2 transition-all duration-300 w-full"
+                                              focus:ring-2 transition-all duration-300 w-full"
               placeholder="Search people, team, project">
           </form>
           <a href="#" class="flex-none w-[46px] h-[46px] bg-white rounded-full p-[11px] relative notification-dot">
@@ -39,12 +39,12 @@
               </div>
               <p class="text-grey">Empower company</p>
             </div>
-            <NuxtLink :to="{ name: 'roles-create' }" class="btn btn-primary">New Role</NuxtLink>
+            <NuxtLink :to="{ name: 'companies-id-roles-create' }" class="btn btn-primary">New Role</NuxtLink>
           </div>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
-          <p v-if="$fetchState.pending">Fetching employee......</p>
+          <p v-if="$fetchState.pending">Fetching roles......</p>
           <div class="items-center card !flex-row gap-4" v-else v-for="role in roles.data.result.data">
             <a href="#" class="absolute inset-0 focus:ring-2 ring-primary rounded-[26px]"></a>
             <img src="/assets/svgs/ric-flag.svg" alt="">
