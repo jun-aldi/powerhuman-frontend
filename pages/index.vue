@@ -8,8 +8,7 @@
         <p v-if="$fetchState.pending">Fetching companies...</p>
         <select v-else v-model="selectedCompany" name="companies" id=""
           class="appearance-none input-field form-icon-chevron_down">
-
-          //kita looping
+          <!-- kita looping -->
           <option :value="company.id" v-for="company in companies.data.result.data">
             {{ company.name }}
           </option>
